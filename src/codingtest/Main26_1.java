@@ -1,30 +1,31 @@
 package codingtest;
-//2562
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
+public class Main26_1{
 
-public class Main26 {
-
-	public static void main(String[] args) throws  IOException {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-			
-		int max = 0;
-		int num = 0;
+		StringBuilder sb = new StringBuilder();
+
+		int max = -1000000;
+		int num=0;
 		for (int i = 0; i < 9; i++) {
+			
 			int s = Integer.parseInt(br.readLine());
 			if (s>max) {
 				max=s;
 				num = i+1;
 			}
+			
 		}
-		System.out.println(max);
-		System.out.println(num);
-
+		
+		sb.append(max);
+		sb.append(" ");
+		sb.append(num);
+		
+		System.out.println(sb);
 	}
 
 }

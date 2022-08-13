@@ -1,29 +1,23 @@
 package codingtest;
-//2562
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.util.HashSet;
 
-
-public class Main26 {
+public class Main27 {
 
 	public static void main(String[] args) throws  IOException {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+		HashSet<Integer> hs = new HashSet<Integer>();
+		//hashset : 중복을 허용하지않고, 순서개념이없다. 정렬이안됨.
+		for (int i = 0; i < 10; i++) {
 			
-		int max = 0;
-		int num = 0;
-		for (int i = 0; i < 9; i++) {
-			int s = Integer.parseInt(br.readLine());
-			if (s>max) {
-				max=s;
-				num = i+1;
-			}
+			hs.add(Integer.parseInt(br.readLine())%42);
 		}
-		System.out.println(max);
-		System.out.println(num);
+		
+		System.out.println(hs.size());
 
 	}
 
