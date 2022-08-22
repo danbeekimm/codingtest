@@ -23,8 +23,8 @@ public class Main33 {
 
 
 			for (int i = 100; i <= N; i++) {
-				int hun = i/100; //373/100 = 3
-				int ten = (i/10)%10; //373/10=37  37%10=3
+				int hun = i/100; //3100 = 3
+				int ten = (i/10)%10; //373/73/10=37  37%10=3
 				int one = i%10 ; //375%10 = 5
 
 				if ((hun-ten)==(ten-one)) {
