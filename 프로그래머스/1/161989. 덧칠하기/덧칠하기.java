@@ -9,9 +9,7 @@
                 if(item >= start){
                     answer ++;
                     start = item + m;
-                } else if (start > item){
-                    continue;
-                } 
+                }
             }
             return answer;
         }
